@@ -1,0 +1,2 @@
+# online-shop management service Template using HTML/CSS
+this is a desktop layout of a presentation page for a company that offers online shop management services and provides the appropriate software for this
