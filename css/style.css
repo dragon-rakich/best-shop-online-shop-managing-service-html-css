@@ -13,6 +13,8 @@
 
     --color-primary: #08A6E4;
     --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-black-trans-shadow: #00000029;
+
     --color-green: #55DFB4;
 
     --color-redish: 832cb31f-c0e4-4c7c-8cfd-8120400cc2;
@@ -20,6 +22,7 @@
     --color-light-grey: #F7F7F7;
     --color-white: #ffffff;
     --color-black: #000000;
+    
 }
 
 body {
@@ -30,3 +33,46 @@ a {
     text-decoration: none;
     display: inline-block;
 }
+
+/* header */
+.header {
+    box-shadow: 0px 3px 6px var(--color-black-trans-shadow);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    color: var(--color-primary);
+    font-size: 2em;
+    line-height: 37px;
+    font-weight: 300;
+
+}
+
+.header ul {
+    display: flex;
+    gap: 60px;
+}
+
+.header nav a {
+    color: var(--color-grey);
+    font-size: 0.6875em;
+    line-height: 0.9375em;
+    font-weight: bold;
+    letter-spacing: 3.28px;
+    text-transform: uppercase;
+    padding: 28px 12px;
+    border: 4px solid var(--color-white);
+
+    cursor: pointer;
+}
+
+.header nav a:hover, .header nav a:active {
+    color: var(--color-black);
+    border-bottom: 4px solid var(--color-primary);
+}
+/* e: header */
