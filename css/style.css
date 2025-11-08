@@ -16,6 +16,7 @@
     --color-black-trans-shadow: #00000029;
 
     --color-red: #FB3B64;
+    --color-red-100: #EB476E;
     --color-green: #55DFB4;
 
     --color-redish: 832cb31f-c0e4-4c7c-8cfd-8120400cc2;
@@ -270,7 +271,7 @@ a {
     line-height: 1.3571428571428572em;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .card ul li::before {
@@ -282,6 +283,24 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+
+.card--basic {
+    border-color: var(--color-red-100);
+}
+
+.card--basic .card__price {
+    color: var(--color-red-100);
+}
+
+.card--basic ul {
+    margin-top: 4.3125em;
+}
+
+.card--basic ul li:nth-child(4)::before,
+.card--basic ul li:nth-child(5)::before {
+    background-image: url("../assets/close-icon.svg");
 }
 /* e: nested block card */
 
