@@ -304,6 +304,24 @@ a {
 }
 
 
+.card--pro {
+    width: 405px;
+    height: 500px;
+    border-color: var(--color-primary);
+    box-shadow: 5px 10px 27px var(--color-primary-shadow);
+}
+
+.card--pro .card__price {
+    color: var(--color-primary);
+    line-height: 1.5217391304347827em;
+}
+
+.card--pro ul {
+    margin-top: 3.8125em;
+    gap: 26px;
+}
+
+
 .card--premium {
     border-color: var(--color-green);
 }
