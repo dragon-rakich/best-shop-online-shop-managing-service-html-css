@@ -24,7 +24,10 @@
     --color-white: #ffffff;
     --color-black: #000000;
     
-    --icon-width: 63px;
+    --icon-bg-width: 63px;
+    --icon-person-width: 44px;
+    --icon-views-width: 63.43px;
+    --icon-post-width: 52px;
 }
 
 body {
@@ -122,7 +125,8 @@ a {
 
 /* stats section */
 .stats {
-    margin: 50px 0;
+    padding-top: 100px;
+    padding-bottom: 121px;
 }
 
 .stats__title {
@@ -136,7 +140,6 @@ a {
 .stats__columns {
     display: flex;
     justify-content: center;
-    gap: 20px;
 }
 
 .stats__column {
@@ -145,16 +148,42 @@ a {
     align-items: center;
 }
 
+.stats__column:nth-child(2) {
+    margin-left: 12.8125em;
+    margin-right: 14.6875em;
+}
+
 .stats__column-icon {
-    width: var(--icon-width);
-    height: var(--icon-width);
+    width: var(--icon-bg-width);
+    height: var(--icon-bg-width);
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.8125em;
 }
 
 .stats__column:nth-child(1) .stats__column-icon { background-color: var(--color-red);}
 .stats__column:nth-child(2) .stats__column-icon { background-color: var(--color-primary);}
 .stats__column:nth-child(3) .stats__column-icon { background-color: var(--color-green);}
-.stats__column:nth-child(1) .stats__column-icon { background-image: url("../assets/person-icon.svg")}
+
+.stats__column-icon-person {
+    width: var(--icon-person-width);
+    position: relative;
+    left: calc(var(--icon-person-width)*0.5);
+}
+
+.stats__column-icon-views {
+    width: var(--icon-views-width);
+    position: relative;
+    left: calc(var(--icon-views-width)*0.34);
+}
+
+.stats__column-icon-post {
+    width: var(--icon-post-width);
+    position: relative;
+    left: calc(var(--icon-post-width)*0.5);
+}
 
 .stats__column-title {
     font-size: 1.25em;
@@ -167,6 +196,6 @@ a {
 .stats__column-text {
     color: var(--color-grey);
     font-size: 1em;
-
+    text-align: center;
 }
 /* e: stats section*/
