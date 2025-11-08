@@ -302,6 +302,15 @@ a {
 .card--basic ul li:nth-child(5)::before {
     background-image: url("../assets/close-icon.svg");
 }
+
+
+.card--premium {
+    border-color: var(--color-green);
+}
+
+.card--premium .card__price{
+    color: var(--color-green);
+}
 /* e: nested block card */
 
 /* e: pricing section */
