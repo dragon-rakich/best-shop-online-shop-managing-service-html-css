@@ -24,7 +24,7 @@
     --color-white: #ffffff;
     --color-black: #000000;
     
-    --icon-bg-width: 63px;
+    --icon-width: 63px;
 }
 
 body {
@@ -143,7 +143,30 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
 }
 
+.stats__column-icon {
+    width: var(--icon-width);
+    height: var(--icon-width);
+    border-radius: 50%;
+}
+
+.stats__column:nth-child(1) .stats__column-icon { background-color: var(--color-red);}
+.stats__column:nth-child(2) .stats__column-icon { background-color: var(--color-primary);}
+.stats__column:nth-child(3) .stats__column-icon { background-color: var(--color-green);}
+.stats__column:nth-child(1) .stats__column-icon { background-image: url("../assets/person-icon.svg")}
+
+.stats__column-title {
+    font-size: 1.25em;
+    line-height: 1.2em;
+    font-weight: 800;
+    letter-spacing: 6px;
+    margin-bottom: 0.95em;
+}
+
+.stats__column-text {
+    color: var(--color-grey);
+    font-size: 1em;
+
+}
 /* e: stats section*/
