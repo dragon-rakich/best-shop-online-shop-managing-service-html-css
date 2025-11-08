@@ -262,13 +262,27 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin-bottom: 1.875em;
 }
 
 .card ul li {
     font-size: 0.875em;
     line-height: 1.3571428571428572em;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
+.card ul li::before {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-image: url("../assets/checkmark-icon-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 /* e: nested block card */
 
 /* e: pricing section */
