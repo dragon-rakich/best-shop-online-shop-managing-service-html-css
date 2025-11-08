@@ -15,6 +15,7 @@
     --color-primary-shadow: rgba(7, 172, 230, .16);
     --color-black-trans-shadow: #00000029;
 
+    --color-red: #FB3B64;
     --color-green: #55DFB4;
 
     --color-redish: 832cb31f-c0e4-4c7c-8cfd-8120400cc2;
@@ -23,6 +24,7 @@
     --color-white: #ffffff;
     --color-black: #000000;
     
+    --icon-bg-width: 63px;
 }
 
 body {
@@ -110,3 +112,31 @@ a {
     line-height: 22px;
 }
 /* e: hero section */
+
+/* stats section */
+.stats {
+    margin: 50px 0;
+}
+
+.stats__title {
+    font-size: 2.25em;
+    line-height: 1.1666666666666667em;
+    color: var(--color-black);
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.stats__columns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stats__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* e: stats section*/
