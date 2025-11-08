@@ -58,7 +58,7 @@ a {
 
 .header ul {
     display: flex;
-    gap: 60px;
+    gap: 95px;
 }
 
 .header nav a {
@@ -98,12 +98,19 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+ 
 }
 
 .hero__title {
     font-size: 3.0625em;
-    line-height: 57px;
+    line-height: 1.163265306122449em;
+    margin-bottom: 0.40816326530612246em
+}
+
+.hero__text {
+    font-size: 1em;
+    line-height: 1.375em;
+    margin-bottom: 2.375em
 }
 
 .hero img {
