@@ -34,6 +34,7 @@
     --icon-person-width: 44px;
     --icon-views-width: 63.43px;
     --icon-post-width: 52px;
+    --btn-small-height: 50px;
 }
 
 body {
@@ -45,6 +46,45 @@ a {
     text-decoration: none;
     display: inline-block;
 }
+
+/* btn component */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--secondary-font), sans-serif;
+    color: var(--color-white);
+    font-weight: bold;
+    background-color: var(--color-primary);
+}
+
+.btn--small {
+    width: 150px;
+    height: var(--btn-small-height);
+    font-size: 0.8125em;
+    line-height: 1.3846153846153846em;
+    border-radius: 23px;
+}
+
+.btn--medium {
+    width: 226px;
+    height: 57px;
+    font-size: 0.8125em;
+    line-height: 1.3846153846153846em;
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+}
+
+.btn--large {
+    width: 440px;
+    height: 57px;
+    font-size: 0.8125em;
+    line-height: 1.3846153846153846em;
+    border-radius: 35px;
+}
+
+/* e: btn component */
 
 /* header */
 .header {
@@ -316,6 +356,10 @@ a {
     border-radius: 18px;
     padding-top: 2.125em;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card__title {
@@ -386,6 +430,10 @@ a {
     background-image: url("../assets/close-icon.svg");
 }
 
+.card--basic .btn {
+    background-color: var(--color-red-100);
+}
+
 
 .card--pro {
     width: 405px;
@@ -403,6 +451,10 @@ a {
     gap: 26px;
 }
 
+.card--pro .btn {
+    width: 165px;
+}
+
 
 .card--premium {
     border-color: var(--color-green);
@@ -410,6 +462,16 @@ a {
 
 .card--premium .card__price{
     color: var(--color-green);
+}
+
+.card--premium .btn {
+    background-color: var(--color-green);
+}
+
+
+.card .btn {
+    position: relative;
+    top: calc(var(--btn-small-height)*0.5)
 }
 /* e: nested block card */
 /* e: pricing section */
@@ -556,6 +618,7 @@ label.contact__form-checkbox-field {
 
 .contact__form button {
     align-self: flex-end;
+    border: none;
 }
 
 
