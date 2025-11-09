@@ -22,6 +22,7 @@
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
     --color-grey-200: #707070;
+    --color-grey-300: #E8E9ED;
     --color-white: #ffffff;
     --color-black: #000000;
     --color-black-100: #13253B;
@@ -206,6 +207,88 @@ a {
     text-align: center;
 }
 /* e: stats section*/
+
+/* benefits section */
+.benefits {
+    background-color: var(--color-light-grey);
+    padding-top: 6.5625em;
+    padding-bottom: 6.5625em;
+}
+
+.benefits .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+}
+
+.benefits__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefits__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1124px;
+    height: 370px;
+
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey-300);
+    border-radius: 5px;
+}
+
+.benefits__description {
+    padding-left: 2em;
+    padding-right: 1.25em;
+}
+
+.benefits__title {
+    font-size: 2.25em;
+    line-height: 1.1666666666666667em;
+    margin-bottom: 0.8333333333333334em;
+}
+
+.benefits__text {
+    width: 416px;
+
+    font-family: var(--secondary-font), sans-serif;
+    font-size: 1em;
+    line-height: 1.375em;
+    margin-bottom: 3.125em;
+}
+
+.benefits__underline {
+    display: inline-block;
+    width: 320px;
+    height: 4px;
+    background-color: #000000;
+}
+
+.benefits__row:nth-child(2) .benefits__box {
+    flex-direction: row-reverse;
+}
+
+.benefits__row:nth-child(1) .benefits__img {width: 386.44px;}
+.benefits__row:nth-child(2) .benefits__img {width: 426px;}
+.benefits__row:nth-child(3) .benefits__img {width: 295px; height: 207px;}
+
+
+.benefits__row:nth-child(3) .benefits__text {width: 553px;}
+
+.benefits__row:nth-child(1) .benefits__underline {background-color: var(--color-red)}
+.benefits__row:nth-child(2) .benefits__underline {background-color: var(--color-primary);}
+.benefits__row:nth-child(3) .benefits__underline {background-color: var(--color-green);}
+
+
+.benefits__row:nth-child(3) .benefits__box {width: 623px;}
+.benefits__row:nth-child(3) {width: 1124px;}
+
+
+/* e: benefits */
 
 /* pricing section */
 .pricing {
