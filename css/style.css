@@ -333,7 +333,7 @@ a {
 
 /* contact section */
 .contact {
-
+    margin-bottom: 3.6875em;
 }
 
 .contact .container {
@@ -412,8 +412,11 @@ a {
     letter-spacing: 3.28px;
 }
 
+.contact__form label:nth-child(3) {margin-top: 2.625em;}
+
 .contact__form input {
-    font-size: 1em;
+    font-size: 1.125em;
+    line-height:  2.3333333333333335em;
     width: 100%;
     outline: none;
     border: none;
@@ -425,12 +428,13 @@ label.contact__form-checkbox-field {
     gap: 20px; 
 
     margin-top: 1.875em;
+    margin-bottom: 1.25em;
     
     color: var(--color-grey-200);
     font-size: 0.75em;
     line-height: 1.4166666666666667em;
     font-weight: normal;
-    text-transform: lowercase;
+    text-transform: none;
     letter-spacing: normal;
     cursor: pointer;
 }
@@ -452,6 +456,9 @@ label.contact__form-checkbox-field {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+    top: 3.5px;
 }
 
 .contact__form-checkbox-field img {
