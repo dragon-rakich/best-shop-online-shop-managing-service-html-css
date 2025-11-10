@@ -100,7 +100,7 @@ a {
 .header__logo {
     color: var(--color-primary);
     font-size: 2em;
-    line-height: 37px;
+    line-height: 1.15625em;
     font-weight: 300;
 
 }
@@ -118,7 +118,7 @@ a {
     letter-spacing: 3.28px;
     font-family: var(--secondary-font), sans-serif;
     text-transform: uppercase;
-    padding: 24px 12px;
+    padding: 2.1818181818181817em 1.0909090909090908em;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
 
