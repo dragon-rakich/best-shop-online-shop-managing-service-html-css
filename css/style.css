@@ -454,6 +454,11 @@ a {
     width: 165px;
 }
 
+.card--pro .card__list .card__list-item:nth-child(5)::before {
+    background-image: url("../assets/close-icon.svg");
+}
+
+
 
 .card--premium {
     border-color: var(--color-green);
