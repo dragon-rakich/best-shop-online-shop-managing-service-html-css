@@ -311,7 +311,7 @@ a {
     flex-direction: row-reverse;
 }
 
-.benefits__row:nth-child(1) .benefits__img {width: 386.44px;}
+.benefits__row:nth-child(1) .benefits__img {width: 386.44px; transform: rotate(0deg);}
 .benefits__row:nth-child(2) .benefits__img {width: 426px;}
 .benefits__row:nth-child(3) .benefits__img {width: 295px; height: 207px;}
 
@@ -322,9 +322,29 @@ a {
 .benefits__row:nth-child(2) .benefits__underline {background-color: var(--color-primary);}
 .benefits__row:nth-child(3) .benefits__underline {background-color: var(--color-green);}
 
+.benefits__row:nth-child(3) .benefits__img-bg {
+    background-color: var(--color-green);
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.benefits__row:nth-child(3) .benefits__box {width: 623px;}
-.benefits__row:nth-child(3) {width: 1124px;}
+.benefits__row:nth-child(2) .benefits__img-bg {
+    background-color: var(--color-primary);
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+    left: 50px;
+}
+
+
 
 
 /* e: benefits */
