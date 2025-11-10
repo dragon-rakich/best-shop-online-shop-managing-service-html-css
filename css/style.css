@@ -100,7 +100,7 @@ a {
 .header__logo {
     color: var(--color-primary);
     font-size: 2em;
-    line-height: 37px;
+    line-height: 1.15625em;
     font-weight: 300;
 
 }
